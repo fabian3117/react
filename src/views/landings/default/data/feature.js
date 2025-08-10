@@ -73,39 +73,39 @@ export const feature5 = {
 
 export const feature20 = {
   heading: 'Disfruta la mejor experiencia en futbol',
-  caption: 'Ready to transform your SaaS designs with one powerful UI Kit?',
-  actionBtn: { children: 'Buy Now', href: BUY_NOW_URL, ...linkProps },
-  secondaryBtn: { children: 'Explore Blocks', href: SECTION_PATH },
+  caption: 'Listo para jugar?',
+  actionBtn: { children: 'Alquilar', href: BUY_NOW_URL, ...linkProps },
+  secondaryBtn: { children: 'Contacto', href: SECTION_PATH },
   features: [
     {
       icon: 'tabler-accessible',
-      title: 'WCAG Compliant',
-      content: 'Ensure accessibility with WCAG compliant design for browsing.'
+      title: 'Canchas de Futbol 11',
+      content: 'Disfruta unas hermosas canchas de 11 con XXX.'
     },
     {
       icon: 'tabler-brand-google',
-      title: 'SEO Friendly',
-      content: 'Boost visibility with SEO-friendly features for better search rankings.'
+      title: 'Buffet',
+      content: 'Disfruta de una comida con el equipo luego de un grandioso partido.'
     },
     {
       icon: 'tabler-stack-2',
-      title: 'MUI Components',
-      content: 'Customize Material 3 design MUI components for enhanced aesthetics.'
+      title: 'Bebidas',
+      content: 'Disfruta una buena fria con el equipo.'
     },
     {
       icon: 'tabler-rocket',
-      title: 'High Performance UI',
-      content: 'Adjust content layout for visual coherence on various screen sizes.'
+      title: 'Atencion al cliente personalizada',
+      content: 'Estamos atentos a tus necesidades consultanos.'
     },
     {
       icon: 'tabler-help',
-      title: 'Detailed Documentation',
-      content: 'Access comprehensive documentation for easy guidance on platform usage.'
+      title: 'Estacionamiento privado',
+      content: 'Para tu mayos comodidad y seguridad disfruta de un estacionamiento exclusivo.'
     },
     {
       icon: 'tabler-refresh',
-      title: 'Regular Updates',
-      content: 'Receive consistent updates to keep the platform secure and up-to-date with the latest features.'
+      title: 'Pagos regulares y seguros',
+      content: 'Puedes efectuar reservas de forma segura y rapida.'
     }
   ]
 };
@@ -262,68 +262,67 @@ export const feature23 = {
 };
 
 export const feature18 = {
-  heading: 'Powerful Admin Interface',
-  caption: 'Manage data, users, and workflows effortlessly with intuitive, customizable admin controls and features.',
+  heading: 'Nuestros Servicios',
+  // caption: '',
   topics: [
     {
       icon: 'tabler-sparkles',
-      title: 'Material UI Powered',
-      title2: 'Leverage Power of Material UI Components',
-      description: 'The power and flexibility of Material UI components in admin template',
+      title: 'Futbol 11',
+      title2: 'Canchas de Futbol 11',
+      description: 'Caracteristica de nuestra instalacion.',
       image: '/assets/images/graphics/default/admin-dashboard.png',
       list: [
-        { primary: 'Next.js JavaScript/TypeScript' },
-        { primary: 'Customizable Themes' },
-        { primary: 'Rich Form and Table Components' },
-        { primary: 'Responsive Grid System' }
+        { primary: 'Cancha sesped cintetico' },
+        { primary: 'Cancha CARACTERISTICAXXX' },
+        { primary: 'Cronometros' },
+        // { primary: 'Responsive Grid System' }
       ],
-      actionBtn: { children: 'View Dashboard', href: ADMIN_PATH, ...linkProps },
-      actionBtn2: { children: 'Docs', href: DOCS_URL, ...linkProps }
+      actionBtn: { children: 'Alquilar', href: ADMIN_PATH, ...linkProps },
+      actionBtn2: { children: 'Contactar', href: DOCS_URL, ...linkProps }
     },
     {
       icon: 'tabler-palette',
-      title: 'Customizable Themes',
-      title2: 'Flexible Theming Options',
-      description: 'Tailor themes effortlessly with MUI 7 robust theming system.',
+      title: 'Futbol 5',
+      title2: 'Cancha de Futbol 5',
+      description: 'Caracteristica de nuestra instalacion.',
       image: '/assets/images/graphics/default/admin-dashboard-2.png',
       list: [
-        { primary: 'Easy options for Theming' },
-        { primary: 'Layout Options' },
-        { primary: 'Color Presets tailored to your Web Apps' },
-        { primary: 'Consistency in Design' }
+           { primary: 'Cancha sesped cintetico' },
+        { primary: 'Cancha CARACTERISTICAXXX' },
+        { primary: 'Cronometros' },
       ],
-      actionBtn: { children: 'View Dashboard', href: ADMIN_PATH, ...linkProps },
-      actionBtn2: { children: 'Docs', href: DOCS_URL, ...linkProps }
+      actionBtn: { children: 'Alquilar', href: ADMIN_PATH, ...linkProps },
+      actionBtn2: { children: 'Contacto', href: DOCS_URL, ...linkProps }
     },
     {
       icon: 'tabler-rocket',
-      title: 'Faster Development',
-      title2: 'Rapid Development',
-      description: 'Launch projects quicker with pre-built layouts and components.',
+      title: 'Buffet',
+      title2: 'Buffet comida y bebidas',
+      description: 'Disfruta de un cafe antes de arrancar con la mejor calidad y  una bebida para el final del partido.',
       image: '/assets/images/graphics/default/admin-dashboard-3.png',
       list: [
-        { primary: 'Time Saving' },
-        { primary: 'Tested and Reliable' },
-        { primary: 'Customization Ready' },
-        { primary: 'Enhanced User Experience' }
+        { primary: 'Cafeteria' },
+        { primary: 'Snack' },
+        { primary: 'Bebidas' },
+        { primary: 'Velocidad' }
       ],
-      actionBtn: { children: 'View Dashboard', href: ADMIN_PATH, ...linkProps },
+      actionBtn: { children: 'Ver carta', href: ADMIN_PATH, ...linkProps },
       actionBtn2: { children: 'Docs', href: DOCS_URL, ...linkProps }
     },
-    {
-      icon: 'tabler-scale',
-      title: 'Scalability',
-      title2: 'Build to Scale',
-      description: 'Easily scale your app with flexible, modular, and extensible templates.',
-      image: '/assets/images/graphics/default/admin-dashboard.png',
-      list: [
-        { primary: 'Modular Architecture' },
-        { primary: 'Performance Optimized' },
-        { primary: 'Extensible Codebase' },
-        { primary: 'Future Proof Design' }
-      ],
-      actionBtn: { children: 'View Dashboard', href: ADMIN_PATH, ...linkProps },
-      actionBtn2: { children: 'Docs', href: DOCS_URL, ...linkProps }
-    }
+    // {
+    //   icon: 'tabler-scale',
+    //   title: 'Scalability',
+    //   title2: 'Build to Scale',
+    //   description: 'Easily scale your app with flexible, modular, and extensible templates.',
+    //   image: '/assets/images/graphics/default/admin-dashboard.png',
+    //   list: [
+    //     { primary: 'Modular Architecture' },
+    //     { primary: 'Performance Optimized' },
+    //     { primary: 'Extensible Codebase' },
+    //     { primary: 'Future Proof Design' }
+    //   ],
+    //   actionBtn: { children: 'View Dashboard', href: ADMIN_PATH, ...linkProps },
+    //   actionBtn2: { children: 'Docs', href: DOCS_URL, ...linkProps }
+    // }
   ]
 };

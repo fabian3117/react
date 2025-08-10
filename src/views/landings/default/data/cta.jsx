@@ -47,11 +47,23 @@ function DescriptionLine() {
 }
 
 export const cta5 = {
-  label: 'Join the Community',
-  heading: 'Connect with us on Discord',
-  caption: 'Get support, share insights, and grow together.',
+  label: 'Contacto',
+  heading: 'Contactanos',
+  caption: 'Conecta con nosotros atraves de nuestras redes obten atencion personalizada.',
   primaryBtn: {
-    children: 'Join Discord Community',
+    children: 'Whatssapp',
+    href: branding.company.socialLink.discord,
+    target: '_blank',
+    rel: 'noopener noreferrer'
+  },
+  secondaryBtn: {
+    children: 'Instagram',
+    href: branding.company.socialLink.discord,
+    target: '_blank',
+    rel: 'noopener noreferrer'
+  },
+  terceryBtn: {
+    children: 'Whatssapp',
     href: branding.company.socialLink.discord,
     target: '_blank',
     rel: 'noopener noreferrer'
@@ -66,7 +78,7 @@ export const cta5 = {
       { avatar: '/assets/images/user/avatar4.png' },
       { avatar: '/assets/images/user/avatar5.png' }
     ],
-    review: '250k+ Reviews (4.65 out of 5)'
+    review: 'Estamos atentos a tus mensajes'
   }
 };
 

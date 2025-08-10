@@ -153,34 +153,7 @@ export default function Footer7() {
             delay: 0.4
           }}
         >
-          <Grid container spacing={{ xs: 4, md: 3 }}>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Stack direction={{ sm: 'row', md: 'column' }} sx={{ gap: 3, justifyContent: 'space-between', height: 1 }}>
-                {logoFollowContent}
-                <Stack sx={{ gap: { xs: 2, sm: 2.5, md: 3 } }}>
-                  {usefullLinks.map((item, index) => (
-                    <Stack direction="row" sx={{ gap: 1, alignItems: 'center' }} key={index}>
-                      {item.icon}
-                      <Link
-                        component={NextLink}
-                        variant="body2"
-                        color="text.secondary"
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Usefull Links"
-                      >
-                        {item.title}
-                      </Link>
-                    </Stack>
-                  ))}
-                </Stack>
-              </Stack>
-            </Grid>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Sitemap list={data} isMenuDesign />
-            </Grid>
-          </Grid>
+        
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -68,9 +68,9 @@ const data = {
       ]
     },
     {
-      title: 'External',
+      title: 'Redes',
       itemsList: [
-        { title: 'Blog', link: { href: 'https://blog.saasable.io/', target: '_blank' } },
+        { title: 'Instagram', link: { href: 'https://blog.saasable.io/', target: '_blank' } },
         { title: 'Documentation', link: { href: DOCS_URL, target: '_blank' } },
         { title: 'Support', link: { href: 'https://support.phoenixcoded.net/', target: '_blank' } },
         {

@@ -123,7 +123,7 @@ function bannerData() {
       <Stack sx={{ gap: 1 }}>
         <Stack sx={{ alignItems: 'flex-start', gap: 1.5 }}>
           <Chip
-            label={<Typography variant="subtitle2">SaasAble Admin Template</Typography>}
+            label={<Typography variant="subtitle2">Panel informativo</Typography>}
             icon={
               <CardMedia
                 component="img"
@@ -136,14 +136,16 @@ function bannerData() {
             size="small"
             sx={{ bgcolor: 'background.default', '& .MuiChip-label': { px: 1.5, py: 0.5 }, '& .MuiChip-icon': { ml: 1.25 } }}
           />
-          <Typography variant="h5">Exciting Dashboard on the Way!</Typography>
+          <Typography variant="h5">Panel de informacion y reenvio!</Typography>
         </Stack>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Effortlessly manage your app’s backend with customizable admin dashboards that enhance productivity.
+          En caso de querer verificar mas informacion sobre tu reserva.
+          Te dejamos una forma de busar toda la informacion asociada.
+          No dudes en consultar.
         </Typography>
       </Stack>
       <Button href={ADMIN_PATH} variant="contained" sx={{ minWidth: 92, px: { xs: 2 }, py: 1.25 }}>
-        View Dashboard
+        Verificar reserva
       </Button>
     </Stack>
   );
@@ -162,34 +164,39 @@ export const pagesMegamenu = {
       {
         title: 'General',
         itemsList: [
-          { title: 'About', link: { href: 'https://stage.saasable.io/about', ...linkProps } },
-          { title: 'Career', status: 'Pro' },
-          { title: 'Privacy Policy', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
-          { title: 'Contact Us', status: 'Pro' },
-          { title: 'FAQs', status: 'Pro' },
-          { title: 'Pricing', status: 'Pro' }
+          { title: 'Sobre nosotros', link: { href: 'https://stage.saasable.io/about', ...linkProps } },
+          // { title: 'Career', status: 'Pro' },
+          { title: 'Reservas', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
+          { title: 'Contacto', status: 'Pro' },
+          // { title: 'FAQs', status: 'Pro' },
+          { title: 'Precios', status: 'Pro' }
         ]
       },
+      // {
+      //   title: 'Maintenance',
+      //   itemsList: [
+      //     { title: 'Coming Soon', status: 'Pro' },
+      //     { title: 'Error 404', link: { href: PRIVIEW_PATH.error404, ...linkProps } },
+      //     { title: 'Error 500', link: { href: PRIVIEW_PATH.error500, ...linkProps } },
+      //     { title: 'Under Maintenance', status: 'Pro' }
+      //   ]
+      // },
       {
-        title: 'Maintenance',
+        title: 'Redes',
         itemsList: [
-          { title: 'Coming Soon', status: 'Pro' },
-          { title: 'Error 404', link: { href: PRIVIEW_PATH.error404, ...linkProps } },
-          { title: 'Error 500', link: { href: PRIVIEW_PATH.error500, ...linkProps } },
-          { title: 'Under Maintenance', status: 'Pro' }
-        ]
-      },
-      {
-        title: 'External',
-        itemsList: [
-          { title: 'Blog', link: { href: 'https://blog.saasable.io/', ...linkProps } },
-          { title: 'Documentation', link: { href: DOCS_URL, ...linkProps } },
-          { title: 'Support', link: { href: branding.company.socialLink.support, ...linkProps } },
+          { title: 'Instagram', link: { href: 'https://blog.saasable.io/', ...linkProps } },
+          { title: 'Facebook', link: { href: DOCS_URL, ...linkProps } },
+          { title: 'Whatssapp', link: { href: branding.company.socialLink.support, ...linkProps } },
           {
-            title: 'Discord',
-            link: { href: branding.company.socialLink.discord, ...linkProps }
+            title: 'Telefono',
+            status: 'ICON',
+            // link: { href: branding.company.socialLink.discord, ...linkProps }
           },
-          { title: 'Terms & Conditions', link: { href: 'https://mui.com/store/terms/', ...linkProps } }
+          { title: 'Direccion', 
+            status: 'Maps',
+            
+            // link: { href: 'https://mui.com/store/terms/', ...linkProps } 
+          }
         ]
       }
     ],

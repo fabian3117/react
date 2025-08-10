@@ -72,7 +72,7 @@ export const feature5 = {
 };
 
 export const feature20 = {
-  heading: 'Comprehensive UI Kit Tailored to your Need',
+  heading: 'Disfruta la mejor experiencia en futbol',
   caption: 'Ready to transform your SaaS designs with one powerful UI Kit?',
   actionBtn: { children: 'Buy Now', href: BUY_NOW_URL, ...linkProps },
   secondaryBtn: { children: 'Explore Blocks', href: SECTION_PATH },

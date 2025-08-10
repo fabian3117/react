@@ -4,8 +4,8 @@ import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 import { SECTION_PATH } from '@/path';
 const example_title="Landing Bienvenido a XXYY-STORE\n";
-const example_name_store0="FEDE";
-const example_name_store1="STORE";
+const example_name_store0="Cancha";
+const example_name_store1="Futbol";
 const example_description="Descripcion de negocio\n";
 const example_chips_list = [
   { image: '/assets/images/shared/react.svg', title: 'ventaja 0' },

@@ -20,9 +20,9 @@ function footerData() {
     <Stack direction={{ sm: 'row' }} sx={{ gap: 1.5, justifyContent: 'space-between', alignItems: { xs: 'flex-start', sm: 'center' } }}>
       <Stack sx={{ gap: 1 }}>
         <Stack direction="row" sx={{ alignItems: 'center', gap: 1 }}>
-          <Typography variant="h5">New landing demos are coming soon!</Typography>
+          <Typography variant="h5">Revisa la informacion de tu pago!</Typography>
           <Chip
-            label={<Typography variant="caption">Coming Soon</Typography>}
+            label={<Typography variant="caption">Te enviamos QR</Typography>}
             size="small"
             sx={{
               bgcolor: 'background.default',
@@ -41,8 +41,8 @@ function footerData() {
           />
         </Stack>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          SaasAble offers 200+ customizable blocks, empowering you to effortlessly design and build landing pages tailored to your product
-          or service needs.
+          Puedes ver informacion de tu reserva, Recuperar tu QR de inscripcion todo automatizado.
+          Disfruta el partido y si nos necesitas.
         </Typography>
       </Stack>
       <Button
@@ -52,7 +52,7 @@ function footerData() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Buy Now
+        Contacto
       </Button>
     </Stack>
   );
@@ -62,54 +62,54 @@ function footerData() {
 
 export const landingMegamenu = {
   id: 'landings',
-  title: 'Landings',
+  title: 'Reservas',
   megaMenu: {
     type: MegaMenuType.MEGAMENU4,
     popperOffsetX: 195,
     toggleBtn: { children: 'Landings' },
     menuItems: [
       {
-        title: 'CRM',
+        title: 'Ver reserva',
         theme: Themes.THEME_CRM,
         image: '/assets/images/mega-menu/crm-light.svg',
         status: 'Pro'
       },
       {
-        title: 'AI',
+        title: 'Cancelar reserva',
         theme: Themes.THEME_AI,
         image: '/assets/images/mega-menu/ai-light.svg',
         status: 'Pro'
       },
       {
-        title: 'Crypto',
+        title: 'Estado de pago',
         theme: Themes.THEME_CRYPTO,
         image: '/assets/images/mega-menu/crypto-light.svg',
         status: 'Pro'
       },
-      {
-        title: 'Hosting',
-        theme: Themes.THEME_HOSTING,
-        image: '/assets/images/mega-menu/hosting-light.svg',
-        status: 'Pro'
-      },
-      {
-        title: 'PMS',
-        theme: Themes.THEME_PMS,
-        image: '/assets/images/mega-menu/pms-light.svg',
-        status: 'Pro'
-      },
-      {
-        title: 'HRM',
-        theme: Themes.THEME_HRM,
-        image: '/assets/images/mega-menu/hrm-light.svg',
-        status: 'Pro'
-      },
-      {
-        title: 'Plugin',
-        theme: Themes.THEME_PLUGIN,
-        image: '/assets/images/mega-menu/plugin-light.svg',
-        status: 'Pro'
-      }
+      // {
+      //   title: 'Hosting',
+      //   theme: Themes.THEME_HOSTING,
+      //   image: '/assets/images/mega-menu/hosting-light.svg',
+      //   status: 'Pro'
+      // },
+      // {
+      //   title: 'PMS',
+      //   theme: Themes.THEME_PMS,
+      //   image: '/assets/images/mega-menu/pms-light.svg',
+      //   status: 'Pro'
+      // },
+      // {
+      //   title: 'HRM',
+      //   theme: Themes.THEME_HRM,
+      //   image: '/assets/images/mega-menu/hrm-light.svg',
+      //   status: 'Pro'
+      // },
+      // {
+      //   title: 'Plugin',
+      //   theme: Themes.THEME_PLUGIN,
+      //   image: '/assets/images/mega-menu/plugin-light.svg',
+      //   status: 'Pro'
+      // }
     ],
     footerData: footerData()
   }

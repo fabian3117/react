@@ -8,7 +8,7 @@ const data = {
   heading: `Unlock the Power of ${branding.brandName}`,
   caption: 'Discover the myriad benefits that come with our innovative platform.',
   image: '/assets/images/graphics/ai/desktop1-light.svg',
-  primaryBtn: { children: 'Buy Now' },
+  primaryBtn: { children: 'Buy Nows' },
   secondaryBtn: { children: 'Get free figma' },
   features: [
     {

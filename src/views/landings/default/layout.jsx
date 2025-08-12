@@ -11,6 +11,7 @@ import { NavbarContent10 } from '@/blocks/navbar/navbar-content';
 
 // @data
 import { navbar } from './data';
+import ServerModal from "@/views/landings/default/ServerModal";
 
 /***************************  LAYOUT - MAIN  ***************************/
 
@@ -22,6 +23,7 @@ export default function MainLayout({ children }) {
         <Navbar10>
           <NavbarContent10 {...navbar} />
         </Navbar10>
+        <ServerModal />
       </Box>
       {/* app/(landing)/* */}
       {children}

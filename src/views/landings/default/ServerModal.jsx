@@ -12,13 +12,33 @@ import CardMedia from '@mui/material/CardMedia';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputAdornment from '@mui/material/InputAdornment';
+
 // @project
 import branding from '@/branding.json';
 import { Themes } from '@/config';
 import { MegaMenuType } from '@/enum';
 import { ADMIN_PATH, BUY_NOW_URL, DOCS_URL, PAGE_PATH, PRIVIEW_PATH } from '@/path';
+import { TextField } from '@mui/material';
+import { Basic } from 'next/font/google';
+import BasicTextField from '@/components/BasicText';
 
-
+const ElementData=[{
+  label:"Nombre",
+  text:"Nombre",
+  placeholder:"Introduce tu nombre completo"
+},
+{
+  label:"Email",
+  text:"Email",
+  placeholder:"Introduce tu email"
+},
+{
+  label:"Telefono",
+  text:"Telefono",
+  placeholder:"Introduce tu telefono"
+}];
 const style = {
   position: 'absolute',
   top: '50%',
@@ -35,6 +55,7 @@ export default function ServerModal() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [value, setValue] = React.useState('');
 
   return (
     <div>
@@ -65,51 +86,23 @@ export default function ServerModal() {
           />
           <Typography variant="h5">Alquila tu cancha ahora</Typography>
         </Stack>
-        <div>
- <OutlinedInput
-      id="input-search-header"
-      value={value}
-      onChange={(e) => setValue(e.target.value)}
-      placeholder="Search"
-      startAdornment={
-        <InputAdornment position="start">
-          <IconSearch stroke={1.5} size="16px" />
-        </InputAdornment>
-      }
-      endAdornment={
-        <InputAdornment position="end">
-          <HeaderAvatar>
-            <IconAdjustmentsHorizontal stroke={1.5} size="20px" />
-          </HeaderAvatar>
-          <Box sx={{ ml: 2 }}>
-            <Avatar
-              variant="rounded"
-              sx={{
-                ...theme.typography.commonAvatar,
-                ...theme.typography.mediumAvatar,
-                bgcolor: 'orange.light',
-                color: 'orange.dark',
-                '&:hover': {
-                  bgcolor: 'orange.dark',
-                  color: 'orange.light'
-                }
-              }}
-              {...bindToggle(popupState)}
-            >
-              <IconX stroke={1.5} size="20px" />
-            </Avatar>
-          </Box>
-        </InputAdornment>
-      }
-      aria-describedby="search-helper-text"
-      slotProps={{ input: { 'aria-label': 'weight', sx: { bgcolor: 'transparent', pl: 0.5 } } }}
-      sx={{ width: '100%', ml: 0.5, px: 2, bgcolor: 'background.paper' }}
-    />
-        </div>
+      
+      
+    
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           Realiza el alquiler en el momento.
           Introoduce tus datos para registrar toda tu informacion.
         </Typography>
+        <Box>
+      {ElementData.map((item, index) => (
+        <BasicTextField 
+          key={index}
+          text={item.text}
+          label={item.label}
+          placeholder={item.placeholder}
+        />
+      ))}
+    </Box>
       </Stack>
       <Button href={ADMIN_PATH} variant="contained" sx={{ minWidth: 92, px: { xs: 2 }, py: 1.25 }}>
         Siguente

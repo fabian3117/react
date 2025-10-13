@@ -25,6 +25,7 @@ import { getBackgroundDots } from '@/utils/getBackgroundDots';
 
 // @assets
 import Wave from '@/images/graphics/Wave';
+import VideoPlayer from '@/components/VideoPlayer';
 
 // threshold - adjust threshold as needed
 const options = { root: null, rootMargin: '0px', threshold: 0.6 };
@@ -102,6 +103,7 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
         }}
       ></Box>
       <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
+
         <Box ref={containerRef}>
           <Box sx={{ pb: { xs: 3, sm: 4, md: 5 } }}>
             <Stack sx={{ alignItems: 'center', gap: 1.5 }}>
@@ -115,18 +117,26 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
                   ease: [0.215, 0.61, 0.355, 1]
                 }}
               >
-                <Chip
-                  variant="outlined"
-                  label={
-                    typeof chip.label === 'string' ? (
-                      <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-                        {chip.label}
-                      </Typography>
-                    ) : (
-                      chip.label
-                    )
-                  }
-                  sx={{ bgcolor: 'grey.100', '& .MuiChip-label': { py: 0.5, px: 1.5 } }}
+                
+                {/*<GraphicsCard sx={{ border: '5px solid', borderColor: 'grey.300' }}>*/}
+                {/*  <video*/}
+                {/*    playsInline*/}
+                {/*    ref={videoRef}*/}
+                {/*    width="100%"*/}
+                {/*    height="100%"*/}
+                {/*    style={{ display: 'flex', objectFit: 'cover' }}*/}
+                {/*    preload="metadata"*/}
+                {/*    autoPlay={false}*/}
+                {/*    loop={true}*/}
+                {/*    muted={true}*/}
+                {/*    poster={videoThumbnail}*/}
+                {/*  >*/}
+                {/*    <source src={videoSrc} type="video/mp4" />*/}
+                {/*  </video>*/}
+                {/*</GraphicsCard>*/}
+                <VideoPlayer
+                  videoSrc={videoRef}
+                  videoThumbnail={videoThumbnail}
                 />
               </motion.div>
 
@@ -226,22 +236,7 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
             }}
             style={{ scale }}
           >
-            <GraphicsCard sx={{ border: '5px solid', borderColor: 'grey.300' }}>
-              <video
-                playsInline
-                ref={videoRef}
-                width="100%"
-                height="100%"
-                style={{ display: 'flex', objectFit: 'cover' }}
-                preload="metadata"
-                autoPlay={false}
-                loop={true}
-                muted={true}
-                poster={videoThumbnail}
-              >
-                <source src={videoSrc} type="video/mp4" />
-              </video>
-            </GraphicsCard>
+
           </motion.div>
         </Box>
       </ContainerWrapper>

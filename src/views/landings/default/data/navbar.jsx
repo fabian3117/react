@@ -70,8 +70,8 @@ export const navbar = {
   navItems: [
     { id: 'home', title: 'Inicio', link: '/' },
     landingMegamenu,
-    // { id: 'reservas', title: 'Reservas', link: SECTION_PATH },
-    { id: 'dashboard', title: 'Dashboard', link: ADMIN_PATH, ...linkProps },
+    // { id: 'reservas', title: 'Clases', link: SECTION_PATH },
+    // { id: 'dashboard', title: ' ACA Dashboard', link: ADMIN_PATH, ...linkProps },
     pagesMegamenu,
     { id: 'contacto', title: 'Contacto', link: DOCS_URL, ...linkProps, icon: 'tabler-pin-invoke' }
   ]

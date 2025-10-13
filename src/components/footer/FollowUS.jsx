@@ -19,23 +19,19 @@ const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 const socialIcons = [
   {
     icon: 'tabler-filled-linkedin',
-    link: { href: `${branding.company.socialLink.linkedin}`, ...linkProps }
+    link: { href: `www.linkedin.com/in/fabian3117`, ...linkProps }
   },
-  {
-    icon: 'tabler-filled-facebook',
-    link: { href: `${branding.company.socialLink.facebook}`, ...linkProps }
-  },
+  // {
+  //   icon: 'tabler-filled-facebook',
+  //   link: { href: `${branding.company.socialLink.facebook}`, ...linkProps }
+  // },
   {
     icon: 'tabler-filled-youtube',
     link: { href: `${branding.company.socialLink.youtube}`, ...linkProps }
   },
   {
     icon: 'tabler-filled-brand-github',
-    link: { href: `${branding.company.socialLink.github}`, ...linkProps }
-  },
-  {
-    icon: 'tabler-filled-dribble',
-    link: { href: `${branding.company.socialLink.dribble}`, ...linkProps }
+    link: { href: `www.github.com/fabian3117`, ...linkProps }
   }
 ];
 

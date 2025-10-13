@@ -3,16 +3,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 import { SECTION_PATH } from '@/path';
-const example_title="Landing Bienvenido a XXYY-STORE\n";
-const example_name_store0="Cancha";
-const example_name_store1="Futbol";
-const example_description="Descripcion de negocio\n";
+const example_title="Entrenemos \n Bjt";
+const example_name_store0="Entrenamiento";
+const example_name_store1="BJT";
+const example_description="Entrenamientos personalizados adaptados a tus necesidades, inicia en mundo de lucha\n";
 const example_chips_list = [
-  { image: '/assets/images/shared/react.svg', title: 'ventaja 0' },
-  { image: '/assets/images/shared/next-js.svg', title: 'Ventaja 1' },
-  { image: '/assets/images/shared/material-ui.svg', title: 'Ventaja 2' },
-  { image: '/assets/images/shared/typescript.svg', title: 'Ventaja 3' },
-  { image: '/assets/images/shared/javascript.svg', title: 'Ventaja 4' }
+  { image: '/assets/images/shared/react.svg', title: 'Entrenamiento personalizado' },
+  { image: '/assets/images/shared/next-js.svg', title: 'Preparacion para lucha' },
+  { image: '/assets/images/shared/material-ui.svg', title: 'Inicio al mundo de lucha' },
+  { image: '/assets/images/shared/typescript.svg', title: 'Comunidad' },
+  // { image: '/assets/images/shared/javascript.svg', title: 'Ventaja 4' }
 ];
 export const hero = {
   chip: {

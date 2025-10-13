@@ -50,7 +50,7 @@ export default function Pricing9({ heading, caption, features, plans }) {
             <Typeset {...{ heading, caption, stackProps: { sx: { textAlign: 'center' } } }} />
           </motion.div>
         )}
-        <Grid container spacing={1.5} sx={{ height: 1, justifyContent: 'center' }}>
+        <Grid container spacing={1} sx={{ height: 1, justifyContent: 'center' }}>
           {plans.map((plan, index) => (
             <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
               <motion.div
@@ -61,10 +61,10 @@ export default function Pricing9({ heading, caption, features, plans }) {
                 style={{ height: '100%' }}
               >
                 <GraphicsCard sx={{ height: 1, ...(plan.active && { border: '1px solid', borderColor: 'primary.main' }) }}>
-                  <Box sx={{ pt: { xs: 4, sm: 5, md: 8 }, px: { xs: 2, md: 5 }, pb: { xs: 2, sm: 3, md: 5.25 }, height: 1 }}>
-                    <Stack sx={{ gap: 5, height: 1 }}>
+                  <Box sx={{ pt: { xs: 4, sm: 5, md: 6 }, px: { xs: 2, md: 5 }, pb: { xs: 2, sm: 3, md: 5.25 }, height: 1 }}>
+                    <Stack sx={{ gap: 2, height: 0.5 }}>
                       <Stack sx={{ gap: { xs: 2, md: 3 } }}>
-                        <Stack sx={{ gap: { xs: 1, sm: 1.5 }, textAlign: 'center' }}>
+                        <Stack sx={{ gap: { xs: 1, sm: 1 }, textAlign: 'center' }}>
                           <Typography variant="subtitle1" sx={{ color: 'text.secondary' }}>
                             {plan.title}
                           </Typography>

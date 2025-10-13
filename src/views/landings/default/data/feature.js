@@ -2,6 +2,7 @@
 import branding from '@/branding.json';
 import { IconType } from '@/enum';
 import { SECTION_PATH, BUY_NOW_URL, ADMIN_PATH, DOCS_URL } from '@/path';
+import { items_plan_libre } from '@/data/planes';
 
 const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 
@@ -72,41 +73,41 @@ export const feature5 = {
 };
 
 export const feature20 = {
-  heading: 'Disfruta la mejor experiencia en futbol',
-  caption: 'Listo para jugar?',
-  actionBtn: { children: 'Alquilar', href: BUY_NOW_URL, ...linkProps },
+  heading: 'Disfruta de la mejor experiencia en deportes',
+  caption: 'Listo para ser parte?',
+  actionBtn: { children: 'Membresia', href: BUY_NOW_URL, ...linkProps },
   secondaryBtn: { children: 'Contacto', href: SECTION_PATH },
   features: [
     {
       icon: 'tabler-accessible',
-      title: 'Canchas de Futbol 11',
-      content: 'Disfruta unas hermosas canchas de 11 con XXX.'
+      title: 'Personalizado',
+      content: 'El entrenamiento adaptado a tus necesidades'
     },
     {
       icon: 'tabler-brand-google',
-      title: 'Buffet',
-      content: 'Disfruta de una comida con el equipo luego de un grandioso partido.'
+      title: 'Preparacion para competencias',
+      content: 'Te preparamos para tus proximas compentecias'
     },
     {
       icon: 'tabler-stack-2',
-      title: 'Bebidas',
-      content: 'Disfruta una buena fria con el equipo.'
+      title: 'Varieda',
+      content: 'Disfruta de la mayor variedad en tus entrenamientos con amplia experiencia.'
     },
-    {
-      icon: 'tabler-rocket',
-      title: 'Atencion al cliente personalizada',
-      content: 'Estamos atentos a tus necesidades consultanos.'
-    },
-    {
-      icon: 'tabler-help',
-      title: 'Estacionamiento privado',
-      content: 'Para tu mayos comodidad y seguridad disfruta de un estacionamiento exclusivo.'
-    },
-    {
-      icon: 'tabler-refresh',
-      title: 'Pagos regulares y seguros',
-      content: 'Puedes efectuar reservas de forma segura y rapida.'
-    }
+    // {
+    //   icon: 'tabler-rocket',
+    //   title: 'Atencion al cliente personalizada',
+    //   content: 'Estamos atentos a tus necesidades consultanos.'
+    // },
+    // {
+    //   icon: 'tabler-help',
+    //   title: 'Estacionamiento privado',
+    //   content: 'Para tu mayos comodidad y seguridad disfruta de un estacionamiento exclusivo.'
+    // },
+    // {
+    //   icon: 'tabler-refresh',
+    //   title: 'Pagos regulares y seguros',
+    //   content: 'Puedes efectuar reservas de forma segura y rapida.'
+    // }
   ]
 };
 
@@ -262,19 +263,19 @@ export const feature23 = {
 };
 
 export const feature18 = {
-  heading: 'Nuestros Servicios',
+  heading: 'Planes',
   // caption: '',
   topics: [
     {
       icon: 'tabler-sparkles',
-      title: 'Futbol 11',
-      title2: 'Canchas de Futbol 11',
-      description: 'Caracteristica de nuestra instalacion.',
+      title: '1 vez a la semana',
+      title2: 'Entrenamiento 1 dia a eleccion',
+      description: 'Caracteristica de la clase.',
       image: '/assets/images/graphics/default/admin-dashboard.png',
       list: [
-        { primary: 'Cancha sesped cintetico' },
-        { primary: 'Cancha CARACTERISTICAXXX' },
-        { primary: 'Cronometros' },
+        { primary: 'Clase tecnicas' },
+        { primary: 'Clase lucha' },
+        { primary: 'Entrenamiento fisico' },
         // { primary: 'Responsive Grid System' }
       ],
       actionBtn: { children: 'Alquilar', href: ADMIN_PATH, ...linkProps },
@@ -282,47 +283,44 @@ export const feature18 = {
     },
     {
       icon: 'tabler-palette',
-      title: 'Futbol 5',
-      title2: 'Cancha de Futbol 5',
-      description: 'Caracteristica de nuestra instalacion.',
+      title: 'Pago por clases',
+      title2: 'Pago por cantidad de clases',
+      description: 'Caracteristicas.',
       image: '/assets/images/graphics/default/admin-dashboard-2.png',
       list: [
-           { primary: 'Cancha sesped cintetico' },
-        { primary: 'Cancha CARACTERISTICAXXX' },
-        { primary: 'Cronometros' },
+           { primary: 'Pago por cantidad de clases' },
+        { primary: 'Entrenamiento fisico' },
+        { primary: 'Clase lucha' },
+        { primary: 'Mejoras personalizadas' },
       ],
       actionBtn: { children: 'Alquilar', href: ADMIN_PATH, ...linkProps },
       actionBtn2: { children: 'Contacto', href: DOCS_URL, ...linkProps }
     },
     {
       icon: 'tabler-rocket',
-      title: 'Buffet',
-      title2: 'Buffet comida y bebidas',
-      description: 'Disfruta de un cafe antes de arrancar con la mejor calidad y  una bebida para el final del partido.',
+      title: '2 Veces por semana',
+      title2: 'Difruta 2 veces a la semana',
+      description: 'Disfruta de clases 2 veces a la semana para aprovechar la semana.',
       image: '/assets/images/graphics/default/admin-dashboard-3.png',
       list: [
-        { primary: 'Cafeteria' },
-        { primary: 'Snack' },
-        { primary: 'Bebidas' },
-        { primary: 'Velocidad' }
+        { primary: 'Clase tecnicas' },
+        { primary: 'Clase lucha' },
+        { primary: 'Entrenamiento fisico' },
+        { primary: 'Open los findes' },
+        { primary: 'Enlongacion' },
       ],
       actionBtn: { children: 'Ver carta', href: ADMIN_PATH, ...linkProps },
       actionBtn2: { children: 'Docs', href: DOCS_URL, ...linkProps }
     },
-    // {
-    //   icon: 'tabler-scale',
-    //   title: 'Scalability',
-    //   title2: 'Build to Scale',
-    //   description: 'Easily scale your app with flexible, modular, and extensible templates.',
-    //   image: '/assets/images/graphics/default/admin-dashboard.png',
-    //   list: [
-    //     { primary: 'Modular Architecture' },
-    //     { primary: 'Performance Optimized' },
-    //     { primary: 'Extensible Codebase' },
-    //     { primary: 'Future Proof Design' }
-    //   ],
-    //   actionBtn: { children: 'View Dashboard', href: ADMIN_PATH, ...linkProps },
-    //   actionBtn2: { children: 'Docs', href: DOCS_URL, ...linkProps }
-    // }
+    {
+      icon: 'tabler-scale',
+      title: 'Libre',
+      title2: 'Ingresa a todas nuestras clases en la semana.',
+      description: 'Acceso completo a todas las clases durante la semana, Sin preocuparte por dias ni cupos.',
+      image: '/assets/images/graphics/default/admin-dashboard.png',
+      list: items_plan_libre,
+      actionBtn: { children: 'Contactar', href: ADMIN_PATH, ...linkProps },
+      actionBtn2: { children: 'Comprar', href: DOCS_URL, ...linkProps }
+    }
   ]
 };

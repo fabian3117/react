@@ -6,7 +6,7 @@ export const landings = [
   {
     title: 'CRM',
     theme: Themes.THEME_CRM,
-    image: '/assets/images/mega-menu/crm-light.svg',
+    // image: '/assets/images/mega-menu/crm-light.svg',
     status: 'Pro'
   },
   {

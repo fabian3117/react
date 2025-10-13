@@ -66,7 +66,7 @@ export const landingMegamenu = {
   megaMenu: {
     type: MegaMenuType.MEGAMENU4,
     popperOffsetX: 195,
-    toggleBtn: { children: 'Landings' },
+    toggleBtn: { children: 'Pagos' },
     menuItems: [
       {
         title: 'Ver reserva',
@@ -86,30 +86,6 @@ export const landingMegamenu = {
         image: '/assets/images/mega-menu/crypto-light.svg',
         status: 'Pro'
       },
-      // {
-      //   title: 'Hosting',
-      //   theme: Themes.THEME_HOSTING,
-      //   image: '/assets/images/mega-menu/hosting-light.svg',
-      //   status: 'Pro'
-      // },
-      // {
-      //   title: 'PMS',
-      //   theme: Themes.THEME_PMS,
-      //   image: '/assets/images/mega-menu/pms-light.svg',
-      //   status: 'Pro'
-      // },
-      // {
-      //   title: 'HRM',
-      //   theme: Themes.THEME_HRM,
-      //   image: '/assets/images/mega-menu/hrm-light.svg',
-      //   status: 'Pro'
-      // },
-      // {
-      //   title: 'Plugin',
-      //   theme: Themes.THEME_PLUGIN,
-      //   image: '/assets/images/mega-menu/plugin-light.svg',
-      //   status: 'Pro'
-      // }
     ],
     footerData: footerData()
   }
@@ -155,32 +131,21 @@ function bannerData() {
 
 export const pagesMegamenu = {
   id: 'pages',
-  title: 'Pages',
+  title: 'Clases',
   megaMenu: {
     type: MegaMenuType.MEGAMENU5,
-    toggleBtn: { children: 'Pages' },
+    toggleBtn: { children: 'Pagos' },
     popperWidth: 860,
     menuItems: [
       {
         title: 'General',
         itemsList: [
           { title: 'Sobre nosotros', link: { href: 'https://stage.saasable.io/about', ...linkProps } },
-          // { title: 'Career', status: 'Pro' },
           { title: 'Reservas', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
           { title: 'Contacto', status: 'Pro' },
-          // { title: 'FAQs', status: 'Pro' },
           { title: 'Precios', status: 'Pro' }
         ]
       },
-      // {
-      //   title: 'Maintenance',
-      //   itemsList: [
-      //     { title: 'Coming Soon', status: 'Pro' },
-      //     { title: 'Error 404', link: { href: PRIVIEW_PATH.error404, ...linkProps } },
-      //     { title: 'Error 500', link: { href: PRIVIEW_PATH.error500, ...linkProps } },
-      //     { title: 'Under Maintenance', status: 'Pro' }
-      //   ]
-      // },
       {
         title: 'Redes',
         itemsList: [

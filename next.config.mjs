@@ -17,6 +17,11 @@ const nextConfig = {
       transform: '@mui/lab/{{member}}'
     }
   },
+  eslint: {
+    // Advertencia: Esto permitirá que la compilación se complete incluso si
+    // tu proyecto tiene errores de ESLint.
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {

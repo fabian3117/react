@@ -24,11 +24,12 @@ const example_buy={
 	"title": "Compra en tienda",
 	"description": "Compra en tienda"
 };
-const NEXT_MP_KEY=process.env.NEXT_MP_KEY || 'TEST-3257957245266231-120618-3f59f5b2cf5a168dc5f9c3f9e7ecaaa9-1733800710';
-const URL_MP_BASE='https://api.mercadopago.com/instore/orders/qr/seller/collectors/1733800710/pos/SUC002POS001/qrs';
+//const NEXT_MP_KEY=process.env.NEXT_MP_KEY || 'TEST-3257957245266231-120618-3f59f5b2cf5a168dc5f9c3f9e7ecaaa9-1733800710';
+//const URL_MP_BASE='https://api.mercadopago.com/instore/orders/qr/seller/collectors/1733800710/pos/SUC002POS001/qrs';
 const alquilar_ahora_example=async () => {
   window.scrollTo(0, 1000);
 //  ServerModal();
+  /*
   return;
 try {
   const res = await fetch("/api/mp/", {
@@ -51,7 +52,7 @@ try {
   // Este bloque siempre se ejecuta, independientemente del resultado
   console.log('Proceso de alquiler finalizado.');
 }
-
+*/
 }
 const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 export const navbar = {

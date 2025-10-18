@@ -74,9 +74,9 @@ export const feature5 = {
 
 export const feature20 = {
   heading: 'Disfruta de la mejor experiencia en deportes',
-  caption: 'Listo para ser parte?',
-  actionBtn: { children: 'Membresia', href: BUY_NOW_URL, ...linkProps },
-  secondaryBtn: { children: 'Contacto', href: SECTION_PATH },
+  // caption: 'Listo para ser parte?',
+  // actionBtn: { children: 'Membresia', href: BUY_NOW_URL, ...linkProps },
+  // secondaryBtn: { children: 'Contacto', href: SECTION_PATH },
   features: [
     {
       icon: 'tabler-accessible',
@@ -271,7 +271,7 @@ export const feature18 = {
       title: '1 vez a la semana',
       title2: 'Entrenamiento 1 dia a eleccion',
       description: 'Caracteristica de la clase.',
-      image: '/assets/images/graphics/default/admin-dashboard.png',
+      image: '/assets/images/graphics/default/scren_one.jpg',
       list: [
         { primary: 'Clase tecnicas' },
         { primary: 'Clase lucha' },
@@ -286,7 +286,7 @@ export const feature18 = {
       title: 'Pago por clases',
       title2: 'Pago por cantidad de clases',
       description: 'Caracteristicas.',
-      image: '/assets/images/graphics/default/admin-dashboard-2.png',
+      image: '/assets/images/graphics/default/scren_two.webp',
       list: [
            { primary: 'Pago por cantidad de clases' },
         { primary: 'Entrenamiento fisico' },

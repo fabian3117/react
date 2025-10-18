@@ -194,14 +194,14 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
                   ease: [0.215, 0.61, 0.355, 1]
                 }}
               >
-                <ButtonAnimationWrapper>
-                  <Button
-                    color="primary"
-                    variant="contained"
-                    startIcon={<SvgIcon name="tabler-sparkles" size={16} stroke={3} color="background.default" />}
-                    {...primaryBtn}
-                  />
-                </ButtonAnimationWrapper>
+                {/*<ButtonAnimationWrapper>*/}
+                {/*  <Button*/}
+                {/*    color="primary"*/}
+                {/*    variant="contained"*/}
+                {/*    startIcon={<SvgIcon name="tabler-sparkles" size={16} stroke={3} color="background.default" />}*/}
+                {/*    {...primaryBtn}*/}
+                {/*  />*/}
+                {/*</ButtonAnimationWrapper>*/}
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}

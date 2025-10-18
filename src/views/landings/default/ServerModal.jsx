@@ -23,6 +23,7 @@ import { ADMIN_PATH, BUY_NOW_URL, DOCS_URL, PAGE_PATH, PRIVIEW_PATH } from '@/pa
 import { TextField } from '@mui/material';
 import { Basic } from 'next/font/google';
 import BasicTextField from '@/components/BasicText';
+import { CloseEye } from '@/icons';
 
 const ElementData=[{
   label:"Nombre",
@@ -67,11 +68,17 @@ export default function ServerModal() {
         aria-labelledby="modal-title"
         aria-describedby="modal-description"
       >
+
         <Stack sx={{ alignItems: 'flex-start', gap: 3, height: 1, justifyContent: 'center' }}>
-      <Stack sx={{ gap: 1 }}>
+      <Stack sx={{ gap: 1 ,background:"aliceblue",borderRadius:2}}>
+        {/*<CloseEye/>*/}
+        <div onClick={handleClose}>
+          <p>Cerrar</p>
+
+        </div>
         <Stack sx={{ alignItems: 'flex-start', gap: 1.5 }}>
           <Chip
-            label={<Typography variant="subtitle2">Alquiler</Typography>}
+            label={<Typography variant="subtitle2">Compra plan</Typography>}
             icon={
               <CardMedia
                 component="img"
@@ -86,16 +93,16 @@ export default function ServerModal() {
           />
           <Typography variant="h5">Alquila tu cancha ahora</Typography>
         </Stack>
-      
-      
-    
+
+
+
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           Realiza el alquiler en el momento.
           Introoduce tus datos para registrar toda tu informacion.
         </Typography>
         <Box>
       {ElementData.map((item, index) => (
-        <BasicTextField 
+        <BasicTextField
           key={index}
           text={item.text}
           label={item.label}

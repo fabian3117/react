@@ -26,16 +26,16 @@ export const pricing = {
       exploreLink: { children: text_redirect, href: FREEBIES_URL, ...linkProps },
       featuresID: [1, 3,2]
     },
-    {
-      title: 'Clases 2 vez por semana',
-      active: false,
-      price: price_level_1,
-      featureTitle: 'Caracteristicas',
-      // content: 'Learn more about the Pro',
-      // contentLink: { children: 'license', href: 'https://mui.com/store/license/', ...linkProps },
-      exploreLink: { children: text_redirect, href: BUY_NOW_URL, ...linkProps },
-      featuresID: [1,2,3, 4, 5, 6, 7, 8, 9, 10]
-    },
+    // {
+    //   title: 'Clases 2 vez por semana',
+    //   active: false,
+    //   price: price_level_1,
+    //   featureTitle: 'Caracteristicas',
+    //   // content: 'Learn more about the Pro',
+    //   // contentLink: { children: 'license', href: 'https://mui.com/store/license/', ...linkProps },
+    //   exploreLink: { children: text_redirect, href: BUY_NOW_URL, ...linkProps },
+    //   featuresID: [1,2,3, 4, 5, 6, 7, 8, 9, 10]
+    // },
     {
       title: 'Plan full',
       active: false,
